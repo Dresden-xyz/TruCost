@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TruCost - Spend Intentionally</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                green: '#7CF08D',
+                blue: '#5D8DFE',
+                darkBlue: '#4A76E8',
+                orange: '#FDB813',
+                cyan: '#48C6EF'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+        
+        .brand-text-tru {
+          background: linear-gradient(to bottom right, #7CF08D, #48C6EF);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .brand-text-cost {
+          background: linear-gradient(to bottom right, #48C6EF, #5D8DFE);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .brand-shield-gradient {
+          background: linear-gradient(135deg, #7CF08D 0%, #48C6EF 50%, #5D8DFE 100%);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "dexie": "https://esm.sh/dexie@^4.2.1",
+    "date-fns": "https://esm.sh/date-fns@^4.1.0",
+    "@heroicons/react/": "https://esm.sh/@heroicons/react@^2.2.0/"
+  }
+}
+</script>
+</head>
+<body class="bg-slate-50 text-slate-900 select-none overflow-x-hidden">
+    <div id="root"></div>
+</body>
+</html>

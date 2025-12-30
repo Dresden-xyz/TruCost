@@ -1,0 +1,8 @@
+{
+  "name": "TruCost",
+  "description": "TruCost helps you understand the impact of your spending by converting monetary costs into hours worked and the delay on your financial goals. It's a mobile-first tool for intentional spending.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
